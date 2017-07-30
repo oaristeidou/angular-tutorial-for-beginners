@@ -7,6 +7,8 @@
 </div>
 <h2>Here are some links to help you start: </h2>
 <ul>
-  <app-search-box></app-search-box>
+  <app-color-picker #picker color="red" (color)="previewer.color=$event"></app-color-picker>
+  <app-color-previewer #previewer></app-color-previewer>
+  <button (click)="picker.reset()">Reset</button>
 </ul>
 

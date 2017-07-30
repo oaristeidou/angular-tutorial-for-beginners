@@ -1,0 +1,17 @@
+{
+  "name": "y",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Odyssefs Aristeidou <airoddyisback@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
