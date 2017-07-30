@@ -7,8 +7,8 @@
 </div>
 <h2>Here are some links to help you start: </h2>
 <ul>
-  <app-color-picker #picker color="red" (color)="previewer.color=$event"></app-color-picker>
-  <app-color-previewer #previewer></app-color-previewer>
-  <button (click)="picker.reset()">Reset</button>
+  <app-color-sample #sample></app-color-sample>
+  <input #input (keyup)="sample.color=input.value"
+    placeholder="Type your favorite color">
 </ul>
 
