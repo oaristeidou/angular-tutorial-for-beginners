@@ -10,6 +10,11 @@ export class SearchBoxComponent implements OnInit {
   @Input("placeholder")
   text = 'Type your search';
 
+  clear(input){
+    console.log("Clear clicked ...!");
+    input.value='';
+  }
+
   constructor() { }
 
   ngOnInit() {
