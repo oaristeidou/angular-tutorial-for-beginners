@@ -2,21 +2,11 @@
   <thead>
     <th>Index</th>
     <th>Name</th>
-    <th>Even</th>
-    <th>Odd</th>
-    <th>First</th>
-    <th>Last</th>
   </thead>
   <tbody>
-    <tr *ngFor="let hero of heroes; let i=index;
-        let isEven=even;let isOdd=odd;
-        let isFirst=first;let isLast=last">
+    <tr *ngFor="let hero of heroes; let i=index; trackBy:hero?.id">
       <td>{{i + 1}}</td>
       <td>{{hero.name}}</td>
-      <td>{{isEven}}</td>
-      <td>{{isOdd}}</td>
-      <td>{{isFirst}}</td>
-      <td>{{isLast}}</td>
     </tr>
 
   </tbody>
