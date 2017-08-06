@@ -1,5 +1,5 @@
-<div appCollapseOnClick
-     class="card card-strong disable-text-selection">
+<div appCollapseOnClick #cp="collapsible" [collapsed]="collapsed" (collapsed) ="onToggle($event)"
+     class="card card-strong disable-text-selection" [class.collapsed]="cp.collapsed">
 
   <i class="md-icon collapsible-indicator" >arrow_drop_down</i>
 

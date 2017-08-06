@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesIntroComponent implements OnInit {
 
+  collapsed=false;
+
+  onToggle(collapsed){
+    console.log(collapsed);
+  }
+
   constructor() { }
 
   ngOnInit() {
