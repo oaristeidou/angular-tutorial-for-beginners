@@ -28,6 +28,13 @@ export class HeroesComponent implements OnInit {
     };
   }
 
+  classes(hero:HeroDirective){
+    return {
+      marvel:hero.marvel,
+      hulk:hero.name==='Hulk'
+    };
+  }
+
   track(hero){
     return hero ? hero.id : undefined;
   }
