@@ -19,6 +19,10 @@ export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
 
+  track(hero){
+    return hero ? hero.id : undefined;
+  }
+
   constructor() { }
 
   ngOnInit() {

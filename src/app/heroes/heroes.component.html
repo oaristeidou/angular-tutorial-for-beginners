@@ -4,7 +4,7 @@
     <th>Name</th>
   </thead>
   <tbody>
-    <tr *ngFor="let hero of heroes; let i=index; trackBy:hero?.id">
+    <tr *ngFor="let hero of heroes; let i=index; trackBy:track(hero)">
       <td>{{i + 1}}</td>
       <td>{{hero.name}}</td>
     </tr>
