@@ -8,6 +8,8 @@ import { ColorPreviewerComponent } from './color-previewer/color-previewer.compo
 import { ColorSampleComponent } from './color-sample/color-sample.component';
 import { DirectivesIntroComponent } from './directives-intro/directives-intro.component';
 import { CollapseOnClickDirective } from './collapse-on-click.directive';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CollapseOnClickDirective } from './collapse-on-click.directive';
     ColorPreviewerComponent,
     ColorSampleComponent,
     DirectivesIntroComponent,
-    CollapseOnClickDirective
+    CollapseOnClickDirective,
+    HeroesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule
