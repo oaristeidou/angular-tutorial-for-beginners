@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ContentChildren, OnInit, QueryList} from '@angular/core';
+import {HeroDirective} from '../hero.directive'
 
 const HEROES = [
   {id: 1, name: 'Superman'},
@@ -17,7 +18,8 @@ const HEROES = [
 })
 export class HeroesComponent implements OnInit {
 
-  heroes = HEROES;
+  @ContentChildren(HeroDirective)
+  heroes : QueryList<HeroDirective>;
 
   track(hero){
     return hero ? hero.id : undefined;

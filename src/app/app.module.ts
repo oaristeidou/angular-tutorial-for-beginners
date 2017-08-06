@@ -9,7 +9,7 @@ import { ColorSampleComponent } from './color-sample/color-sample.component';
 import { DirectivesIntroComponent } from './directives-intro/directives-intro.component';
 import { CollapseOnClickDirective } from './collapse-on-click.directive';
 import { HeroesComponent } from './heroes/heroes.component';
-import { HeroComponent } from './hero/hero.component';
+import { HeroDirective } from './hero.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { HeroComponent } from './hero/hero.component';
     DirectivesIntroComponent,
     CollapseOnClickDirective,
     HeroesComponent,
-    HeroComponent
+    HeroDirective
   ],
   imports: [
     BrowserModule
