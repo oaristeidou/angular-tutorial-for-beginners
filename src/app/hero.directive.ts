@@ -10,6 +10,9 @@ export class HeroDirective {
   @Input()
   name: String;
 
+  @Input()
+  marvel=false;
+
 
   constructor() { }
 

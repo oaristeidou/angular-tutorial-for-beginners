@@ -21,6 +21,13 @@ export class HeroesComponent implements OnInit {
   @ContentChildren(HeroDirective)
   heroes : QueryList<HeroDirective>;
 
+  get styles(){
+    return {
+      color:'blue',
+      'text-decoration': 'underline'
+    };
+  }
+
   track(hero){
     return hero ? hero.id : undefined;
   }
