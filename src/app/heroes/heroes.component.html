@@ -5,7 +5,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let hero of heroes; let i=index;"
-      [class.marvel]="hero.marvel">
+      [ngClass]="{marvel:hero.marvel, hulk:hero.name==='Hulk'}">
       <td>{{i + 1}}</td>
       <td>{{hero.name}}</td>
     </tr>
