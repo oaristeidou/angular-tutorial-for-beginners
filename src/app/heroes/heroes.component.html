@@ -5,7 +5,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let hero of heroes; let i=index;"
-      [ngStyle]="styles">
+      [class.marvel]="hero.marvel">
       <td>{{i + 1}}</td>
       <td>{{hero.name}}</td>
     </tr>
