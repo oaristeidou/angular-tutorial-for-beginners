@@ -10,6 +10,7 @@ import { DirectivesIntroComponent } from './directives-intro/directives-intro.co
 import { CollapseOnClickDirective } from './collapse-on-click.directive';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDirective } from './hero.directive';
+import { CoreNgIfComponent } from './core-ng-if/core-ng-if.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeroDirective } from './hero.directive';
     DirectivesIntroComponent,
     CollapseOnClickDirective,
     HeroesComponent,
-    HeroDirective
+    HeroDirective,
+    CoreNgIfComponent
   ],
   imports: [
     BrowserModule
