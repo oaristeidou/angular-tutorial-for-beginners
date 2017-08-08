@@ -1,0 +1,22 @@
+<div class="tab-container" appShowOneContainer>
+
+  <ul class="tab-buttons">
+    <li appShowOneTrigger="superman" [active]="true">Superman</li>
+    <li appShowOneTrigger="batman">Batman</li>
+    <li appShowOneTrigger="flash">Flash</li>
+  </ul>
+
+  <div class="tab-panel" appShowOne="superman" [active]="true">
+    <div class="logo superman"></div>
+  </div>
+
+  <div class="tab-panel" appShowOne="batman">
+    <div class="logo batman"></div>
+  </div>
+
+  <div class="tab-panel" appShowOne="flash">
+    <div class="logo flash"></div>
+  </div>
+
+</div>
+

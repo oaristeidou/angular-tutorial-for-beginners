@@ -11,6 +11,10 @@ import { CollapseOnClickDirective } from './collapse-on-click.directive';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDirective } from './hero.directive';
 import { CoreNgIfComponent } from './core-ng-if/core-ng-if.component';
+import { DirectiveTabsComponent } from './directive-tabs/directive-tabs.component';
+import { ShowOneContainerDirective } from './show-one-container.directive';
+import { ShowOneDirective } from './show-one.directive';
+import { ShowOneTriggerDirective } from './show-one-trigger.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { CoreNgIfComponent } from './core-ng-if/core-ng-if.component';
     CollapseOnClickDirective,
     HeroesComponent,
     HeroDirective,
-    CoreNgIfComponent
+    CoreNgIfComponent,
+    DirectiveTabsComponent,
+    ShowOneContainerDirective,
+    ShowOneDirective,
+    ShowOneTriggerDirective
   ],
   imports: [
     BrowserModule
