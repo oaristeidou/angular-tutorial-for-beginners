@@ -1,9 +1,10 @@
-<div appCollapseOnClick #cp="collapsible" [collapsed]="collapsed" (collapsed) ="onToggle($event)"
-     class="card card-strong disable-text-selection" [class.collapsed]="cp.collapsed">
+<div appCollapseOnClick #cp="collapsible"
+     class="card card-strong disable-text-selection">
 
-  <i class="md-icon collapsible-indicator" >arrow_drop_down</i>
+  <i class="md-icon collapsible-indicator" *ngIf="!cp.collapsed">arrow_drop_down</i>
+  <i class="md-icon collapsible-indicator" *ngIf="cp.collapsed">arrow_drop_up</i>
 
-  <div class="collapsible-section">
+  <div class="collapsible-section" *ngIf="!cp.collapsed">
     This page section is collapsible, double click it and it will collapse or expand.
   </div>
 </div>

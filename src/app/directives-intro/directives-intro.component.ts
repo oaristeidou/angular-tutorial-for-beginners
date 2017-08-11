@@ -5,17 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './directives-intro.component.html',
   styleUrls: ['./directives-intro.component.css']
 })
-export class DirectivesIntroComponent implements OnInit {
+export class DirectivesIntroComponent{
 
   collapsed=false;
-
-  onToggle(collapsed){
-    console.log(collapsed);
-  }
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }
