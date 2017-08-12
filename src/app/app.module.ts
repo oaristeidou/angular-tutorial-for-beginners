@@ -15,6 +15,7 @@ import { DirectiveTabsComponent } from './directive-tabs/directive-tabs.componen
 import { ShowOneContainerDirective } from './show-one-container.directive';
 import { ShowOneDirective } from './show-one.directive';
 import { ShowOneTriggerDirective } from './show-one-trigger.directive';
+import { TemplateSyntaxPropertiesComponent } from './template-syntax-properties/template-syntax-properties.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ShowOneTriggerDirective } from './show-one-trigger.directive';
     DirectiveTabsComponent,
     ShowOneContainerDirective,
     ShowOneDirective,
-    ShowOneTriggerDirective
+    ShowOneTriggerDirective,
+    TemplateSyntaxPropertiesComponent
   ],
   imports: [
     BrowserModule
