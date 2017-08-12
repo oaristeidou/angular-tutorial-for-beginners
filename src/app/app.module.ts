@@ -16,6 +16,7 @@ import { ShowOneContainerDirective } from './show-one-container.directive';
 import { ShowOneDirective } from './show-one.directive';
 import { ShowOneTriggerDirective } from './show-one-trigger.directive';
 import { TemplateSyntaxPropertiesComponent } from './template-syntax-properties/template-syntax-properties.component';
+import { TemplateSyntaxInterpolationComponent } from './template-syntax-interpolation/template-syntax-interpolation.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TemplateSyntaxPropertiesComponent } from './template-syntax-properties/
     ShowOneContainerDirective,
     ShowOneDirective,
     ShowOneTriggerDirective,
-    TemplateSyntaxPropertiesComponent
+    TemplateSyntaxPropertiesComponent,
+    TemplateSyntaxInterpolationComponent
   ],
   imports: [
     BrowserModule
