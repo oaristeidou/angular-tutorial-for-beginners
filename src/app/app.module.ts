@@ -22,6 +22,7 @@ import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
 import { SortedPipe } from './sorted.pipe';
 import { LessonsListComponent } from './lessons-list/lessons-list.component';
 import { LessonsWithServiceComponent } from './lessons-with-service/lessons-with-service.component';
+import {LessonsService} from "./lessons.service";
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { LessonsWithServiceComponent } from './lessons-with-service/lessons-with
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [LessonsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

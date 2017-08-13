@@ -11,7 +11,9 @@ export class LessonsListComponent implements OnInit {
   @Input()
   lessons = [];
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {lessonsData} from "../../lessons";
+import {LessonsService} from "../lessons.service";
 
 @Component({
   selector: 'app-lessons-with-service',
@@ -8,9 +9,9 @@ import {lessonsData} from "../../lessons";
 })
 export class LessonsWithServiceComponent implements OnInit {
 
-  lessons = lessonsData;
+  constructor(public lessonsService: LessonsService) {
 
-  constructor() { }
+  }
 
   ngOnInit() {
   }
