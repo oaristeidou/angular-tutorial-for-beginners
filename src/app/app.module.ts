@@ -20,6 +20,8 @@ import { TemplateSyntaxInterpolationComponent } from './template-syntax-interpol
 import { TemplateSyntaxEventsComponent } from './template-syntax-events/template-syntax-events.component';
 import { AngularPipesComponent } from './angular-pipes/angular-pipes.component';
 import { SortedPipe } from './sorted.pipe';
+import { LessonsListComponent } from './lessons-list/lessons-list.component';
+import { LessonsWithServiceComponent } from './lessons-with-service/lessons-with-service.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { SortedPipe } from './sorted.pipe';
     TemplateSyntaxInterpolationComponent,
     TemplateSyntaxEventsComponent,
     AngularPipesComponent,
-    SortedPipe
+    SortedPipe,
+    LessonsListComponent,
+    LessonsWithServiceComponent
   ],
   imports: [
     BrowserModule
