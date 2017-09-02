@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {lessonsData} from "../../lessons";
 import {LessonsService} from "../lessons.service";
+import {initObservable} from "../init-observable";
 
 @Component({
   selector: 'app-lessons-with-service',
@@ -10,7 +11,8 @@ import {LessonsService} from "../lessons.service";
 export class LessonsWithServiceComponent implements OnInit {
 
   constructor(public lessonsService: LessonsService) {
-
+    initObservable();
+    lessonsService.loadLessons();
   }
 
   ngOnInit() {

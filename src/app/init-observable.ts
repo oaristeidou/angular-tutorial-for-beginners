@@ -1,5 +1,5 @@
 
-import {Observable} from "rxjs";
+import {Observable} from "rxjs/Rx";
 declare function fetch(url:string);
 
 

@@ -23,6 +23,8 @@ import { SortedPipe } from './sorted.pipe';
 import { LessonsListComponent } from './lessons-list/lessons-list.component';
 import { LessonsWithServiceComponent } from './lessons-with-service/lessons-with-service.component';
 import {LessonsService} from "./lessons.service";
+import {HttpModule} from "@angular/http";
+import {initObservable} from "./init-observable";
 
 @NgModule({
   declarations: [
@@ -49,9 +51,13 @@ import {LessonsService} from "./lessons.service";
     LessonsWithServiceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule
   ],
   providers: [LessonsService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){
+    initObservable();
+  }
+}

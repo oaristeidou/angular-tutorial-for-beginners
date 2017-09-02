@@ -1,3 +1,4 @@
-<input class="add-lesson" placeholder="Add Lesson">
+<input class="add-lesson" placeholder="Add Lesson"
+  (keyup.enter)="lessonsService.createLesson(input.value)" #input>
 
 <app-lessons-list [lessons]="lessonsService.lessons"></app-lessons-list>
